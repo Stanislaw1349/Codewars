@@ -1,18 +1,18 @@
-package hw8_1;
+package hw8_2;
 
 import org.junit.Test;
-        import static org.hamcrest.CoreMatchers.equalTo;
-        import static org.hamcrest.CoreMatchers.is;
-        import static org.hamcrest.MatcherAssert.assertThat;
-        import org.junit.runners.JUnit4;
 
-public class BasicOperationsTest
-{
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+
+import org.junit.runners.JUnit4;
+
+public class BasicOperationsTest {
     BasicOperations basicOps = new BasicOperations();
 
     @Test
-    public void testBasics()
-    {
+    public void testBasics() {
         System.out.println("Basic Tests");
         assertThat(basicOps.basicMath("+", 4, 7), is(11));
         assertThat(basicOps.basicMath("-", 15, 18), is(-3));
